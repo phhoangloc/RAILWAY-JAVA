@@ -396,7 +396,7 @@ public class Excercise1 {
 				);
 				i1712++;
 			}while(i1712<accounts.length) ;
-			//Question 16-13:
+			//Question 17-13:
 				//In ra thông tin tất cả các account ngoại trừ account thứ 2
 			System.out.println("question 13 - DoWhile:");
 			int i1713=0;
@@ -412,7 +412,7 @@ public class Excercise1 {
 			}while(i1713<departments.length); 
 			
 			
-			//Question 16-14:
+			//Question 17-14:
 			//In ra thông tin tất cả các account có id < 4;
 			System.out.println("question 14 - While:");
 			int i1714=0;
@@ -431,7 +431,7 @@ public class Excercise1 {
 			
 			
 			
-			//Question 16-15:
+			//Question 17-15:
 			//In ra các số chẵn nhỏ hơn hoặc bằng 20
 			System.out.println("question 15 - While:");
 			int i1715=0;
