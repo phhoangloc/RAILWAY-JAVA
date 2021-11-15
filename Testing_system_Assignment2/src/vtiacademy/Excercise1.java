@@ -124,17 +124,17 @@ public class Excercise1 {
 		//question2
 		System.out.println("question2:");
 		account2.groups = new Group[] {group1,group2};
-		if(account2.groups == null ) {System.out.println("Nhân viên này chưa có group");}
+		if(account2.groups == null ) {System.out.println("Nhân viên n�?y chưa có group");}
 		else{
 		int countGroupInAccount = account2.groups.length;
 		switch(countGroupInAccount){
-		case 1: System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+		case 1: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
 		break;
-		case 2: System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+		case 2: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
 		break;
-		case 3: System.out.println("Nhân viên này là người quan trọng, tham gia nhiều group");
+		case 3: System.out.println("Nhân viên n�?y là người quan trọng, tham gia nhiều group");
 		break;
-		default: System.out.println("Nhân viên này là người hóng chuyện, tham gia tất cả các group");
+		default: System.out.println("Nhân viên n�?y là người hóng chuyện, tham gia tất cả các group");
 		break;
 		}
 	}
@@ -146,24 +146,24 @@ public class Excercise1 {
 		
 		//question4
 		System.out.println("question4:");
-		System.out.println(account1.position.positionName == "Dev"?"Đây là Developer":"Người này không phải là Developer");
+		System.out.println(account1.position.positionName == "Dev"?"Đây là Developer":"Người n�?y không phải là Developer");
 		
 		//Question 5
 		System.out.println("question5:");
 		group1.accounts = new Account[] {account1,account2,account3};
 		
 		int countAccountInGroup = group1.accounts.length;
-		if(group1.accounts == null ) {System.out.println("Nhóm không có thành viên ");}
+		if(group1.accounts == null ) {System.out.println("Nhóm không có th�?nh viên ");}
 		else{
 		
 		switch(countAccountInGroup){
-			case 1: System.out.println("Nhóm có một thành viên");
+			case 1: System.out.println("Nhóm có một th�?nh viên");
 			break;
-			case 2: System.out.println("Nhóm có hai thành viên");
+			case 2: System.out.println("Nhóm có hai th�?nh viên");
 			break;
-			case 3: System.out.println("Nhóm có ba thành viên");
+			case 3: System.out.println("Nhóm có ba th�?nh viên");
 			break;
-			default: System.out.println("Nhóm có nhiều thành viên hoặc không có thành viên");
+			default: System.out.println("Nhóm có nhiều th�?nh viên hoặc không có th�?nh viên");
 			break;
 			}
 		};
@@ -172,17 +172,17 @@ public class Excercise1 {
 		//Question 6
 		System.out.println("question6:");
 			account2.groups = new Group[] {group1,group2};
-			if(account2.groups == null ) {System.out.println("Nhân viên này chưa có group");}
+			if(account2.groups == null ) {System.out.println("Nhân viên n�?y chưa có group");}
 			else{
 			int countGroupInAccount = account2.groups.length;
 			switch(countGroupInAccount){
-			case 1: System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+			case 1: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
 			break;
-			case 2: System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+			case 2: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
 			break;
-			case 3: System.out.println("Nhân viên này là người quan trọng, tham gia nhiều group");
+			case 3: System.out.println("Nhân viên n�?y là người quan trọng, tham gia nhiều group");
 			break;
-			default: System.out.println("Nhân viên này là người hóng chuyện, tham gia tất cả các group");
+			default: System.out.println("Nhân viên n�?y là người hóng chuyện, tham gia tất cả các group");
 			break;
 			}
 		}
@@ -251,8 +251,8 @@ public class Excercise1 {
 			for(int i=0;i<accounts.length;i++) {
 				System.out.println(
 				"thông tin account thứ " + (i+1) + " là: "+" \n"
-						+ "Email: " + accountfor[i].email + " \n"
-						+ "Full name: " + accountfor[i].fullName + " \n"
+						+ "Email: " + accounts[i].email + " \n"
+						+ "Full name: " + accounts[i].fullName + " \n"
 				);
 			};
 		}
