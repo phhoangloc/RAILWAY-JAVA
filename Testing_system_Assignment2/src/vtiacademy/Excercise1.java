@@ -192,9 +192,9 @@ public class Excercise1 {
 		System.out.println("question7:");
 			String postionisDEV = account1.position.positionName;
 			switch(postionisDEV){
-			case "DEV": System.out.println("Đây là Developer");
+			case "Dev": System.out.println("Đây là Developer");
 			break;
-			case "TEST": System.out.println("Đây là Tester");
+			case "Test": System.out.println("Đây là Tester");
 			break;
 			case "Scrum Master": System.out.println("Đây là Scrum Master");
 			break;
