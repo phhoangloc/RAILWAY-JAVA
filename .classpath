@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Extra2_Assignment_1/src/|Testing_system_Assignment2/src/|Testing_system_Assignment/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Extra2_Assignment_1/src"/>
+	<classpathentry kind="src" path="Testing_system_Assignment/src"/>
+	<classpathentry kind="src" path="Testing_system_Assignment2/src"/>
+	<classpathentry kind="output" path="Testing_system_Assignment/bin"/>
+</classpath>

@@ -121,11 +121,13 @@ public class Excercise1 {
 		
 		Department [] departments = {department1,department2,department3};
 		
+		Group[] groups = {group1,group2,group3};
+		
 		question1(account2);
 		question2(account2);
 		question3(account2);
 		question4(account1);
-		question5(group1);
+		question5(groups);
 		question6(account2);
 		question7(account1);
 		question8(accounts);
@@ -155,6 +157,7 @@ public class Excercise1 {
 //		"Nhân viên này chưa có phòng ban"
 //		Nếu không thì sẽ in ra text "Phòng ban của nhân viên này là …"
 		public static void question1(Account account2) {
+			System.out.println("question1");
 		if(account2.department == null) {
 			System.out.println("nhan vien nay chua co phong ban");
 		}else {
@@ -163,6 +166,7 @@ public class Excercise1 {
 	}
 		
 		//question2
+
 //		Kiểm tra account thứ 2
 //		Nếu không có group thì sẽ in ra text "Nhân viên này chưa có group"
 //		Nếu có mặt trong 1 hoặc 2 group thì sẽ in ra text "Group của nhân viên 
@@ -173,6 +177,7 @@ public class Excercise1 {
 //		người hóng chuyện, tham gia tất cả các group"
 		
 		public static void question2(Account account2) {
+			System.out.println("question2");
 		if(account2.groups == null ) {System.out.println("Nhân viên n�?y chưa có group");}
 		else{
 		int countGroupInAccount = account2.groups.length;
@@ -186,6 +191,7 @@ public class Excercise1 {
 //		Question 3:
 //		Sử dụng toán tử ternary để làm Question 1
 		public static void question3(Account account2) {
+			System.out.println("question3");
 		System.out.println(account2.department == null?"nhan vien nay chua co phong ban":"nhan vien nay co phong ban: " + account2.department.departmentName);
 		}
 		//question4
@@ -193,8 +199,9 @@ public class Excercise1 {
 //		Kiểm tra Position của account thứ 1
 //		Nếu Position = Dev thì in ra text "Đây là Developer"
 //		Nếu không phải thì in ra text "Người này không phải là Developer
-		public static void question4(Account account1) {
-		System.out.println(account1.position.positionName == "Dev"?"Đây là Developer":"Người n�?y không phải là Developer");
+		public static void question4(Account accounts) {
+			System.out.println("question4");
+		System.out.println(accounts.position.positionName == "Dev"?"Đây là Developer":"Người n�?y không phải là Developer");
 		}
 
 		//Question 5
@@ -204,67 +211,58 @@ public class Excercise1 {
 //			Nếu số lượng account = 3 thì in ra "Nhóm có ba thành viên"
 //			Còn lại in ra "Nhóm có nhiều thành viên
 	
-	public static void question5(Group group1) {
-		if(group1.accounts == null ) {System.out.println("Nhóm không có th�?nh viên ");}
-		int countAccountInGroup = group1.accounts.length;
-		switch(countAccountInGroup){
-			case 1: System.out.println("Nhóm có một th�?nh viên");
-			break;
-			case 2: System.out.println("Nhóm có hai th�?nh viên");
-			break;
-			case 3: System.out.println("Nhóm có ba th�?nh viên");
-			break;
-			default: System.out.println("Nhóm có nhiều th�?nh viên hoặc không có th�?nh viên");
-			break;
+	public static void question5(Group[] groups) {
+		System.out.println("question5");
+		if(groups==null){System.out.println("nhóm không có thành viên nào");}
+		else {
+		int num = groups.length;
+		switch(num) {
+		case 1: System.out.println("nhóm có một thành viên ");break;
+		case 2: System.out.println("nhóm có hai thành viên ");break;
+		case 3: System.out.println("nhóm có ba thành viên ");break;
+		default: System.out.println("nhóm có nhiều thành viên");break;
 			}
 		}
-		
+	}
 //		Question 6: 
 //		Sử dụng switch case để làm lại Question 2
-			public static void question6(Account account2) {
-			if(account2.groups == null ) {System.out.println("Nhân viên n�?y chưa có group");}
-			else{
-			int countGroupInAccount = account2.groups.length;
-			switch(countGroupInAccount){
-			case 1: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
-			break;
-			case 2: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");
-			break;
-			case 3: System.out.println("Nhân viên n�?y là người quan trọng, tham gia nhiều group");
-			break;
-			default: System.out.println("Nhân viên n�?y là người hóng chuyện, tham gia tất cả các group");
-			break;
+	public static void question6(Account account2) {
+		System.out.println("question6");
+		int num = account2.groups.length;
+		switch(num) {
+		case 0: System.out.println("Nhân viên n�?y chưa có group");break;
+		case 1: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");break;
+		case 2: System.out.println("Group của nhân viên n�?y là Java Fresher, C# Fresher");break;
+		case 3: System.out.println("Nhân viên n�?y là người quan trọng, tham gia nhiều group");break;
+		default: System.out.println("Nhân viên n�?y là người hóng chuyện, tham gia tất cả các group");break;
+	}
+	};
+	
+//	Question 7: 
+//		Sử dụng switch case để làm lại Question 4
+	public static void question7(Account accounts) {
+		System.out.println("question7:");
+		String postionisDEV = accounts.position.positionName;
+		switch(postionisDEV){
+		case "Dev": System.out.println("Đây là Developer");
+		break;
+		case "Test": System.out.println("Đây là Tester");
+		break;
+		case "Scrum Master": System.out.println("Đây là Scrum Master");
+		break;
+		default: System.out.println("Đây là PM");
+		break;
+		}
+	}
+
+	//question8
+	//In ra thông tin các account bao gồm: Email, FullName và tên phòng ban của họ
+		public static void question8(Account[] accounts) {
+			System.out.println("question8:");
+			for(Account acc:accounts) {
+				System.out.println("người thứ nhất" + "Email: " + acc.email+" Họ và tên: "+ acc.fullName + " tên phòng ban: " + acc.department.departmentName );
 			}
 		}
-	}
-			
-//			Question 7: 
-//				Sử dụng switch case để làm lại Question 4
-			
-		public static void question7(Account account1) {
-			String postionisDEV = account1.position.positionName;
-			switch(postionisDEV){
-			case "Dev": System.out.println("Đây là Developer");
-			break;
-			case "Test": System.out.println("Đây là Tester");
-			break;
-			case "Scrum Master": System.out.println("Đây là Scrum Master");
-			break;
-			default: System.out.println("Đây là PM");
-			break;
-		}
-	}
-//		Question 8: 
-//			In ra thông tin các account bao gồm: Email, FullName và tên phòng ban của 
-//			họ
-
-			public static void question8(Account[] accounts) {
-			for (Account account:accounts) {
-			System.out.println("email: " + account.email
-			+ "FullName: " + account.fullName
-			+ account.department.departmentName);
-		}
-	}
 //			Question 9: 
 //				In ra thông tin các phòng ban bao gồm: id và name
 			public static void question9(Department [] ii) {
@@ -553,4 +551,4 @@ public class Excercise1 {
 				i++;
 		}while(i <= 20);
 	}
-};
+}
