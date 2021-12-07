@@ -1,11 +1,6 @@
 package com.vti.backend;
 
 import java.text.ParseException;
-import java.util.Date;
-
-import com.vti.entity.Account;
-import com.vti.entity.Department;
-import com.vti.entity.Group;
 import com.vti.entity.Student;
 
 public class Excersise4 {
