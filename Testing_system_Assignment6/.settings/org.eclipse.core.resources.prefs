@@ -1,3 +1,13 @@
 eclipse.preferences.version=1
-encoding//src/bin/backend/excersise2.java=UTF-8
-encoding//src/frontend/Program.java=UTF-8
+encoding//src/com/vti/backend/question10.java=UTF-8
+encoding//src/com/vti/backend/question3.java=UTF-8
+encoding//src/com/vti/backend/question4.java=UTF-8
+encoding//src/com/vti/backend/question5.java=UTF-8
+encoding//src/com/vti/backend/question6.java=UTF-8
+encoding//src/com/vti/backend/question9.java=UTF-8
+encoding//src/com/vti/entity/Account.java=UTF-8
+encoding//src/com/vti/entity/Department.java=UTF-8
+encoding//src/com/vti/entity/Group.java=UTF-8
+encoding//src/com/vti/entity/Position.java=UTF-8
+encoding//src/com/vti/entity/ScannerUtils.java=UTF-8
+encoding//src/com/vti/frontend/Ex2.java=UTF-8
